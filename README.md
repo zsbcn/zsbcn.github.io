@@ -1,1 +1,1 @@
-个人网站: [首页](https://zsbcn.github.io/)
+个人网站: [首页](https://zsbcn.github.io/){target="_blank"}
