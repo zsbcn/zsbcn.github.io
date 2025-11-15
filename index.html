@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <title>刀摩根の主页</title>
-    <link rel="shortcut icon" href="./pic.png">
-</head>
-<body>
-    <h1 style="text-align: center;">欢迎来到刀摩根的网页</h1>
-    <h2 style="text-align: center;">欢迎来到刀摩根的网页</h2>
-    <h3 style="text-align: center;">欢迎来到刀摩根的网页</h3>
-    <h4 style="text-align: center;">欢迎来到刀摩根的网页</h4>
-    <h5 style="text-align: center;">欢迎来到刀摩根的网页</h5>
-    <h6 style="text-align: center;">欢迎来到刀摩根的网页</h6>
-    <p>大家好，我是UP主刀摩根</p>
-    <hr />
-    <p>个人网页搭建开始</p>
-    <br />
-    <a href="https://space.bilibili.com/294413817" target="_blank">我的B站主页</a>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
